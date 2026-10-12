@@ -9,8 +9,6 @@
 5. Was ist dir unklar geblieben?
 ```
 
-Jede Woche wird der alte Ordner kopiert, mit dem neuen Ordnername: **T1 -> T2**
-
 Frage 2 und 3 sind die wichtigen. Fast alles, was ihr baut, hätte auch anders
 umgesetzt werden können — Bildgröße fest oder übergeben, Rückgabe als Objekt, Array oder
 als zwei Zahlen, Reihenfolge `lat, lon` oder `lon, lat`. 
