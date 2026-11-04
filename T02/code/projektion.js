@@ -15,7 +15,7 @@ function latZuY(lat, hoehe) {
 // Zwei Schritte, nicht einer: erst den Text von der Platte holen,
 // dann den Text in Daten verwandeln. JSON.parse ist die Grenze zwischen
 // "Zeichen in einer Datei" und "Objekte im Speicher".
-const roh = fs.readFileSync("4-orte.json", "utf8");
+const roh = fs.readFileSync("orte.json", "utf8");
 const orte = JSON.parse(roh);
 
 console.log("Gelesen:", orte.length, "Orte aus orte.json");
