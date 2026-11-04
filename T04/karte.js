@@ -1,0 +1,1 @@
+const antwort = await fetch("orte.json");
