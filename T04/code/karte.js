@@ -1,4 +1,3 @@
-// T4, nach Aufgabe 1 — ein Ausschnitt.
 // Neu: lonZuX und latZuY rechnen mit einem Ausschnitt statt immer mit der
 // ganzen Welt.
 
@@ -12,10 +11,6 @@ function lonZuX(lon, breite, ausschnitt = AUSSCHNITT) {
 function latZuY(lat, hoehe, ausschnitt = AUSSCHNITT) {
   return ((ausschnitt.nord - lat) / (ausschnitt.nord - ausschnitt.sued)) * hoehe;
 }
-
-// Prüffälle, Ergebnis vorher bekannt. Stehen lassen, sie kosten nichts.
-console.log("Gmünd x, Welt:", lonZuX(9.79, 720, AUSSCHNITT), "erwartet 379.58");
-console.log("Gmünd y, Welt:", latZuY(48.8, 360, AUSSCHNITT), "erwartet 82.4");
 
 const response = await fetch("orte.json");
 const orte = await response.json();
